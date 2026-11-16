@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b1b">
+<meta name="description" content="Sagar Reality Vlogs - Explore property opportunities, enquire about buying, selling and renting real estate.">
+<title>Sagar Reality Vlogs | Real Estate</title>
+<style>
+:root{--bg:#0b1212;--panel:#121f1e;--panel2:#172725;--green:#20b59a;--mint:#a8eadb;--white:#f4f7f6;--muted:#a9b9b5;--line:rgba(168,234,219,.16)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(11,18,18,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.35px;font-size:17px;line-height:1.15}.mark{width:46px;height:46px;flex:0 0 46px;border:1px solid #43cdb0;border-radius:13px;display:grid;place-items:center;color:var(--mint);font-size:20px;background:linear-gradient(145deg,#173b35,#10201e)}.brand small{display:block;color:var(--muted);font-size:9px;letter-spacing:1.5px;font-weight:600;margin-top:4px}.links{display:flex;gap:15px;color:#d5e0dc;font-size:12px}.links a:hover{color:var(--mint)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:9px;background:var(--green);color:#071411;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.nav-actions{display:flex;align-items:center;gap:12px}.lang-switch{display:flex;gap:3px;padding:4px;border:1px solid var(--line);border-radius:10px;background:#101d1b}.lang-btn{border:0;border-radius:7px;padding:8px 10px;background:transparent;color:var(--muted);font:700 12px Inter,Arial,sans-serif;cursor:pointer}.lang-btn.active{background:var(--green);color:#071411}.btn.outline{background:transparent;border:1px solid #4c8e80;color:var(--mint)}
+.hero{padding:88px 0 76px;background:radial-gradient(ellipse at 80% 30%,rgba(32,181,154,.18),transparent 42%),linear-gradient(120deg,#0b1212,#101e1c 65%,#0b1212);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:55px}.eyebrow{color:var(--mint);text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,6vw,72px);line-height:1.04;letter-spacing:-2px;margin:18px 0}.hero h1 span{color:var(--mint)}.hero p{color:var(--muted);max-width:570px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.visual{min-height:380px;border-radius:26px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(32,181,154,.16),rgba(255,255,255,.02)),url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85') center/cover;position:relative;box-shadow:0 25px 70px #0008}.visual:after{content:"PROPERTY • TRUST • VALUE";position:absolute;bottom:20px;left:20px;background:#0b1715dd;border:1px solid var(--line);padding:12px 16px;border-radius:8px;color:var(--mint);font-size:11px;letter-spacing:2px;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:42px;max-width:520px}.stat{border-left:2px solid var(--green);padding-left:13px}.stat b{display:block;font-size:20px}.stat small{color:var(--muted)}
+section{padding:78px 0}.section-head{max-width:650px;margin-bottom:34px}.section-head .eyebrow{font-size:11px}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.12;margin:10px 0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:16px;padding:25px}.ico{width:46px;height:46px;border-radius:12px;background:#1c4039;color:var(--mint);display:grid;place-items:center;font-size:22px;margin-bottom:18px}.card h3{margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+.band{background:linear-gradient(100deg,#12332d,#10201e);border-block:1px solid var(--line)}.band-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}.band h2{font-size:clamp(25px,4vw,38px);margin:0 0 8px}.band p{color:#c0d2cc;margin:0}
+.form-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}.info-box{background:linear-gradient(160deg,#17342e,#111e1c);border:1px solid var(--line);padding:28px;border-radius:18px}.info-box h3{font-size:24px;margin-top:0}.info-box p,.info-box li{color:var(--muted)}.info-box ul{padding-left:18px}.form-box{background:var(--panel);border:1px solid var(--line);padding:28px;border-radius:18px}.form-box h3{margin:0 0 18px;font-size:23px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:12px;color:#c8d8d3;font-weight:700}input,select,textarea{width:100%;background:#0c1715;border:1px solid #29443e;border-radius:8px;padding:13px;color:white;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--green)}textarea{min-height:105px;resize:vertical}.hint{font-size:11px;color:var(--muted)}
+.rates-compact{grid-column:1/-1;background:linear-gradient(120deg,#17342e,#101d1b);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:2px}.rates-compact-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:11px}.rates-compact-head h3{margin:2px 0 0;font-size:19px}.rates-note{font-size:11px;color:var(--muted)}.rates-compact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.rate-mini{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;border:1px solid var(--line);border-radius:9px;background:#0d1a17;font-size:13px;color:#d7e6e0}.rate-mini strong{font-size:17px;color:var(--mint);white-space:nowrap}.apply-row{display:flex;justify-content:flex-end;margin-top:14px}.apply-btn{min-width:170px}.payment-inline{display:grid;grid-template-columns:1fr 220px;gap:18px;align-items:center;padding:20px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(120deg,#17342e,#101d1b)}.payment-inline-copy h3{margin:5px 0 6px;font-size:21px}.payment-inline-copy p{margin:0;color:var(--muted);font-size:13px}.payment-inline-qr{background:#fff;border-radius:12px;padding:12px;text-align:center;color:#17211f}.payment-inline-qr img{display:block;width:100%;max-width:170px;margin:auto;border-radius:6px}.payment-inline-qr strong{display:block;margin:7px 0 2px;font-size:13px}.payment-inline-qr span{display:block;color:#52625d;font-size:9px;overflow-wrap:anywhere;margin-bottom:8px}.payment-inline-qr .btn{padding:9px 12px;font-size:12px;width:100%}.rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.rate-card{background:linear-gradient(145deg,#18332e,#101d1b);border:1px solid var(--line);border-radius:18px;padding:25px;text-align:center;box-shadow:0 16px 40px #0003;transition:transform .2s,border-color .2s}.rate-card:hover{transform:translateY(-5px);border-color:#43cdb0}.rate-icon{width:42px;height:42px;margin:0 auto 12px;display:grid;place-items:center;border-radius:12px;background:#1c4039;color:var(--mint);font-size:21px}.rate-name{font-size:17px;font-weight:800;color:#eaf5f1}.rate-price{font-size:38px;font-weight:900;color:var(--mint);line-height:1.2;margin:8px 0}.rate-note{font-size:12px;color:var(--muted)}.property-feature{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}.property-feature img{width:100%;height:230px;object-fit:cover;display:block}.property-feature-copy{padding:22px}.property-feature-copy h3{margin:0 0 8px}.property-feature-copy p{color:var(--muted);margin:0;font-size:14px}.payment{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.qr-card{background:#fff;border-radius:18px;padding:18px;max-width:340px;margin:auto;text-align:center;color:#17211f}.qr-card img{display:block;width:100%;height:auto;border-radius:8px}.qr-card strong{display:block;margin-top:10px;font-size:14px;overflow-wrap:anywhere}.upi-id{font-size:12px;color:#394b46;overflow-wrap:anywhere}.payment-copy p{color:var(--muted)}.payment-copy .notice{font-size:12px;border-left:3px solid var(--green);padding:10px 13px;background:#14221f;color:#c5d6d0}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.wa-float{position:fixed;right:18px;bottom:18px;z-index:20;box-shadow:0 8px 28px #0008}
+@media(max-width:800px){.rates-compact-head{align-items:flex-start;flex-direction:column;gap:3px}.rate-mini{flex-direction:column;align-items:flex-start;padding:9px}.rate-mini strong{font-size:16px}.payment-inline{grid-template-columns:1fr}.payment-inline-qr{max-width:260px;width:100%;margin:auto}.links{display:none}.nav-actions{margin-left:auto}.hero{padding:58px 0}.hero-grid,.form-grid,.payment{grid-template-columns:1fr}.visual{min-height:280px}.cards{grid-template-columns:1fr}.rate-grid{grid-template-columns:1fr}.property-feature{grid-template-columns:1fr}.property-feature img{height:210px}.band-inner{align-items:flex-start;flex-direction:column}.stats{gap:8px}.stat b{font-size:17px}}
+@media(max-width:480px){.brand{font-size:13px;gap:7px}.brand small{font-size:8px;letter-spacing:1px}.mark{width:38px;height:38px;flex-basis:38px}.nav-actions{gap:6px}.nav-actions>.btn{padding:9px 9px;font-size:11px}.lang-btn{padding:7px 8px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.form-box,.info-box{padding:20px}.hero h1{letter-spacing:-1px}.nav{height:68px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><span class="mark">SR</span><span>SAGAR REALITY VLOGS<small>REAL ESTATE • PROPERTY • TRUST</small></span></a>
+  <nav class="links"><a href="#services" data-en="Services" data-mr="सेवा">Services</a><a href="#enquiry" data-en="Enquiry" data-mr="चौकशी">Enquiry</a><a href="#rates" data-en="Rates" data-mr="दर">Rates</a><a href="#payment" data-en="Payment" data-mr="पेमेंट">Payment</a><a href="#contact" data-en="Contact" data-mr="संपर्क">Contact</a></nav>
+  <div class="nav-actions"><div class="lang-switch" role="group" aria-label="Choose language"><button type="button" class="lang-btn active" data-lang="en">EN</button><button type="button" class="lang-btn" data-lang="mr">मराठी</button></div><a class="btn" href="#enquiry" data-en="Enquire Now" data-mr="चौकशी करा">Enquire Now</a></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div><div class="eyebrow" data-en="Find a place. Build your future." data-mr="योग्य जागा शोधा. उज्ज्वल भविष्य घडवा.">Find a place. Build your future.</div><h1 data-en="Discover Your|Perfect Property." data-mr="तुमची|परफेक्ट प्रॉपर्टी शोधा.">Discover Your<br><span>Perfect Property.</span></h1>
+  <p data-en="Welcome to Sagar Reality Vlogs. Explore property opportunities with clear guidance for buying, selling and renting residential and commercial spaces." data-mr="Sagar Reality Vlogs मध्ये आपले स्वागत आहे. घर, फ्लॅट, प्लॉट आणि व्यावसायिक मालमत्ता खरेदी, विक्री व भाड्याने घेण्यासाठी योग्य मार्गदर्शन मिळवा.">Welcome to Sagar Reality Vlogs. Explore property opportunities with clear guidance for buying, selling and renting residential and commercial spaces.</p>
+  <div class="actions"><a class="btn" href="#enquiry" data-en="Submit Enquiry ↗" data-mr="चौकशी पाठवा ↗">Submit Enquiry ↗</a><a class="btn outline" href="#services" data-en="Explore Services" data-mr="आमच्या सेवा पहा">Explore Services</a></div>
+  <div class="stats"><div class="stat"><b>Buy</b><small data-en="Find your property" data-mr="तुमची मालमत्ता शोधा">Find your property</small></div><div class="stat"><b>Sell</b><small data-en="List your property" data-mr="मालमत्ता विक्रीसाठी नोंदवा">List your property</small></div><div class="stat"><b>Rent</b><small data-en="Explore rental options" data-mr="भाड्याचे पर्याय पहा">Explore rental options</small></div></div>
+  </div><div class="visual" role="img" aria-label="Modern luxury home"></div>
+</div></section>
+<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow" data-en="What we help with" data-mr="आमच्या सेवा">What we help with</div><h2 data-en="Real estate, made simpler." data-mr="रिअल इस्टेट व्यवहार आता अधिक सोपे.">Real estate, made simpler.</h2><p data-en="Tell us what you are looking for. We’ll help you take the next step." data-mr="तुमची गरज सांगा; पुढील प्रक्रियेसाठी आम्ही मार्गदर्शन करू.">Tell us what you are looking for. We’ll help you take the next step.</p></div>
+<div class="cards">
+  <article class="card"><div class="ico">⌂</div><h3 data-en="Buy a Property" data-mr="मालमत्ता खरेदी">Buy a Property</h3><p data-en="Share your preferred location, budget and property type to enquire about buying opportunities." data-mr="तुमचे पसंतीचे ठिकाण, बजेट आणि मालमत्तेचा प्रकार सांगा.">Share your preferred location, budget and property type to enquire about buying opportunities.</p></article>
+  <article class="card"><div class="ico">↗</div><h3 data-en="Sell a Property" data-mr="मालमत्ता विक्री">Sell a Property</h3><p data-en="Have a flat, house, plot or commercial property to sell? Send the details for a discussion." data-mr="फ्लॅट, घर, प्लॉट किंवा व्यावसायिक मालमत्ता विकायची आहे? तपशील पाठवा.">Have a flat, house, plot or commercial property to sell? Send the details for a discussion.</p></article>
+  <article class="card"><div class="ico">⌑</div><h3 data-en="Rent / Lease" data-mr="भाडे / लीज">Rent / Lease</h3><p data-en="Enquire about residential or commercial rental and lease requirements." data-mr="निवासी किंवा व्यावसायिक मालमत्तेच्या भाडे अथवा लीजसाठी चौकशी करा.">Enquire about residential or commercial rental and lease requirements.</p></article>
+</div>
+<div class="property-feature">
+  <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85" alt="Modern residential property" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85'">
+  <div class="property-feature-copy"><h3 data-en="Find a place that feels like home." data-mr="तुमच्या स्वप्नातील घर शोधा.">Find a place that feels like home.</h3><p data-en="Explore residential and commercial property opportunities with Sagar Reality Vlogs." data-mr="Sagar Reality Vlogs सोबत निवासी आणि व्यावसायिक मालमत्तांच्या संधी शोधा.">Explore residential and commercial property opportunities with Sagar Reality Vlogs.</p></div>
+</div></div></section>
+<section class="band"><div class="wrap band-inner"><div><h2 data-en="Looking for the right property?" data-mr="योग्य मालमत्ता शोधत आहात?">Looking for the right property?</h2><p data-en="Send your requirement and start a conversation with us." data-mr="तुमची गरज पाठवा आणि आमच्याशी संपर्क साधा.">Send your requirement and start a conversation with us.</p></div><a class="btn" href="#enquiry" data-en="Get in Touch ↗" data-mr="संपर्क साधा ↗">Get in Touch ↗</a></div></section>
+
+<section id="trust"><div class="wrap">
+  <div class="section-head">
+    <div class="eyebrow" data-en="Why choose us" data-mr="आमच्यावर विश्वास का ठेवावा?">Why choose us</div>
+    <h2 data-en="Trust is our foundation." data-mr="विश्वास हीच आमची ओळख.">Trust is our foundation.</h2>
+    <p data-en="A professional property journey starts with clear communication and honest guidance." data-mr="स्पष्ट संवाद आणि प्रामाणिक मार्गदर्शनातून मालमत्तेचा योग्य प्रवास सुरू होतो.">A professional property journey starts with clear communication and honest guidance.</p>
+  </div>
+  <div class="cards trust-cards">
+    <article class="card"><div class="ico">✓</div><h3 data-en="Clear & Transparent Communication" data-mr="स्पष्ट आणि पारदर्शक संवाद">Clear & Transparent Communication</h3><p data-en="We explain the process, service charges and next steps clearly, so you can make informed decisions." data-mr="प्रक्रिया, सेवा शुल्क आणि पुढील टप्पे स्पष्टपणे सांगतो, जेणेकरून तुम्ही विचारपूर्वक निर्णय घेऊ शकाल.">We explain the process, service charges and next steps clearly, so you can make informed decisions.</p></article>
+    <article class="card"><div class="ico">♢</div><h3 data-en="Customer-First Guidance" data-mr="ग्राहकांना प्राधान्य देणारे मार्गदर्शन">Customer-First Guidance</h3><p data-en="We listen to your needs, respect your budget and help you understand suitable property options without pressure." data-mr="तुमची गरज ऐकून, बजेटचा आदर करून योग्य पर्याय समजावतो—कोणताही अनावश्यक दबाव न आणता.">We listen to your needs, respect your budget and help you understand suitable property options without pressure.</p></article>
+  </div>
+</div></section>
+<section id="enquiry"><div class="wrap"><div class="section-head"><div class="eyebrow" data-en="Let’s connect" data-mr="चला, संपर्क साधूया">Let’s connect</div><h2 data-en="Property Enquiry Form" data-mr="मालमत्तेसाठी चौकशी फॉर्म">Property Enquiry Form</h2><p data-en="Fill in your details. Your enquiry will open in WhatsApp so you can send it directly." data-mr="तुमची माहिती भरा. चौकशी WhatsApp मध्ये उघडेल; तिथून ती पाठवा.">Fill in your details. Your enquiry will open in WhatsApp so you can send it directly.</p></div>
+<div class="form-grid"><aside class="info-box"><h3 data-en="Let’s find your next opportunity." data-mr="तुमची पुढील संधी शोधूया.">Let’s find your next opportunity.</h3><p data-en="Share a few details about your requirement. We’ll get back to you for the next steps." data-mr="तुमच्या गरजेची थोडक्यात माहिती द्या. पुढील माहितीसाठी आम्ही संपर्क करू.">Share a few details about your requirement. We’ll get back to you for the next steps.</p><ul><li data-en="Buying / Selling / Renting" data-mr="खरेदी / विक्री / भाडे">Buying / Selling / Renting</li><li data-en="Residential / Commercial / Plot" data-mr="निवासी / व्यावसायिक / प्लॉट">Residential / Commercial / Plot</li><li data-en="Preferred location and budget" data-mr="पसंतीचे ठिकाण आणि बजेट">Preferred location and budget</li></ul><p><strong>WhatsApp:</strong><br><a href="https://wa.me/919175546576">+91 91755 46576</a></p></aside>
+
+<div class="rates-compact" id="rates">
+  <div class="rates-compact-head">
+    <div>
+      <div class="eyebrow" data-en="Service charges" data-mr="सेवा शुल्क">Service charges</div>
+      <h3 data-en="Our Rates" data-mr="आमचे दर">Our Rates</h3>
+    </div>
+    <span class="rates-note" data-en="Clear pricing, no surprises" data-mr="स्पष्ट दर, कोणतेही आश्चर्य नाही">Clear pricing, no surprises</span>
+  </div>
+  <div class="rates-compact-grid">
+    <div class="rate-mini"><span data-en="Marketing" data-mr="मार्केटिंग">Marketing</span><strong>₹500</strong></div>
+    <div class="rate-mini"><span data-en="Sell" data-mr="विक्री">Sell</span><strong>₹200</strong></div>
+    <div class="rate-mini"><span data-en="Buy" data-mr="खरेदी">Buy</span><strong>₹200</strong></div>
+  </div>
+</div>
+<form class="form-box" id="leadForm"><h3 data-en="Send Your Details" data-mr="तुमची माहिती भरा">Send Your Details</h3><div class="fields">
+<div class="field"><label for="name"><span data-en="Full Name *" data-mr="पूर्ण नाव *">Full Name *</span></label><input id="name" name="name" required placeholder="Enter your name"></div>
+<div class="field"><label for="phone"><span data-en="Mobile Number *" data-mr="मोबाईल नंबर *">Mobile Number *</span></label><input id="phone" name="phone" type="tel" required pattern="[0-9+ -]{10,15}" placeholder="Your contact number"></div>
+<div class="field"><label for="interest"><span data-en="I want to *" data-mr="मला काय करायचे आहे? *">I want to *</span></label><select id="interest" name="interest" required><option value="" data-en="Select" data-mr="निवडा">Select</option><option data-en="Buy a Property" data-mr="मालमत्ता खरेदी">Buy a Property</option><option data-en="Sell a Property" data-mr="मालमत्ता विक्री">Sell a Property</option><option data-en="Rent a Property" data-mr="मालमत्ता भाड्याने">Rent a Property</option><option data-en="Lease a Property" data-mr="लीजवर मालमत्ता">Lease a Property</option></select></div>
+<div class="field"><label for="type"><span data-en="Property Type" data-mr="मालमत्तेचा प्रकार">Property Type</span></label><select id="type" name="type"><option data-en="Residential" data-mr="निवासी">Residential</option><option data-en="Commercial" data-mr="व्यावसायिक">Commercial</option><option data-en="Plot / Land" data-mr="प्लॉट / जमीन">Plot / Land</option><option data-en="Other" data-mr="इतर">Other</option></select></div>
+<div class="field"><label for="location"><span data-en="Preferred Location" data-mr="पसंतीचे ठिकाण">Preferred Location</span></label><input id="location" name="location" placeholder="City / Area"></div>
+<div class="field"><label for="budget"><span data-en="Approx. Budget" data-mr="अंदाजे बजेट">Approx. Budget</span></label><select id="budget" name="budget"><option value="" data-en="Select budget" data-mr="बजेट निवडा">Select budget</option><option data-en="Below ₹25 Lakh" data-mr="₹२५ लाखांपेक्षा कमी">Below ₹25 Lakh</option><option data-en="₹25–50 Lakh" data-mr="₹२५–५० लाख">₹25–50 Lakh</option><option data-en="₹50 Lakh–1 Crore" data-mr="₹५० लाख–१ कोटी">₹50 Lakh–1 Crore</option><option data-en="₹1–2 Crore" data-mr="₹१–२ कोटी">₹1–2 Crore</option><option data-en="Above ₹2 Crore" data-mr="₹२ कोटींपेक्षा जास्त">Above ₹2 Crore</option><option data-en="Not decided" data-mr="अजून ठरवलेले नाही">Not decided</option></select></div>
+<div class="field full"><label for="message"><span data-en="Additional Details" data-mr="अधिक माहिती">Additional Details</span></label><textarea id="message" name="message" placeholder="Tell us more about your requirement..."></textarea></div>
+<div class="field full">
+  <div class="payment-inline">
+    <div class="payment-inline-copy">
+      <div class="eyebrow" data-en="Complete your payment" data-mr="तुमचे पेमेंट पूर्ण करा">Complete your payment</div>
+      <h3 data-en="Pay securely with UPI" data-mr="UPI द्वारे पेमेंट करा">Pay securely with UPI</h3>
+      <p data-en="Scan the QR code below using any UPI app. Please confirm the applicable service fee before paying." data-mr="कोणत्याही UPI ॲपने खालील QR कोड स्कॅन करा. पेमेंट करण्यापूर्वी लागू सेवा शुल्क निश्चित करा.">Scan the QR code below using any UPI app. Please confirm the applicable service fee before paying.</p>
+    </div>
+    <div class="payment-inline-qr">
+      <img src="bharatpe-qr.jpg" alt="BharatPe UPI payment QR code">
+      <strong data-en="Scan & Pay" data-mr="स्कॅन करा आणि पेमेंट करा">Scan & Pay</strong>
+      <span>BHARATPE2T0O0W9Y1H82306@unitype</span>
+      <a class="btn" href="upi://pay?pa=BHARATPE2T0O0W9Y1H82306@unitype&pn=BharatPe%20Merchant&cu=INR" data-en="Open UPI App ↗" data-mr="UPI ॲप उघडा ↗">Open UPI App ↗</a>
+    </div>
+  </div>
+  <p class="hint" data-en="After payment, keep your UPI transaction ID or screenshot for reference. Your enquiry is sent separately through WhatsApp when you press the submit button." data-mr="पेमेंट झाल्यावर UPI Transaction ID किंवा स्क्रीनशॉट जतन करा. Submit बटण दाबल्यावर तुमची चौकशी WhatsApp द्वारे वेगळी पाठवली जाईल.">After payment, keep your UPI transaction ID or screenshot for reference. Your enquiry is sent separately through WhatsApp when you press the submit button.</p>
+</div>
+
+<div class="field full"><button class="btn" type="submit" data-en="Send Enquiry on WhatsApp ↗" data-mr="WhatsApp वर चौकशी पाठवा ↗">Send Enquiry on WhatsApp ↗</button><span class="hint"><span data-en="By submitting, WhatsApp will open with your details. You need to press Send there." data-mr="सबमिट केल्यावर तुमच्या माहितीसह WhatsApp उघडेल. तिथे Send दाबा.">By submitting, WhatsApp will open with your details. You need to press Send there.</span></span></div>
+</div></form>
+<div class="apply-row"><a class="btn apply-btn" href="#enquiry" data-en="Apply Now ↗" data-mr="आता अर्ज करा ↗">Apply Now ↗</a></div>
+</div></div></section>
+
+
+
+<section id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow" data-en="Contact" data-mr="संपर्क">Contact</div><h2 data-en="Let’s talk property." data-mr="मालमत्तेबद्दल बोलूया.">Let’s talk property.</h2><p data-en="For enquiries and property discussions, contact us on WhatsApp." data-mr="चौकशी आणि मालमत्तेसंबंधी चर्चेसाठी WhatsApp वर संपर्क साधा.">For enquiries and property discussions, contact us on WhatsApp.</p></div><a class="btn" href="https://wa.me/919175546576" data-en="WhatsApp: +91 91755 46576 ↗" data-mr="WhatsApp: +91 91755 46576 ↗">WhatsApp: +91 91755 46576 ↗</a></div></section>
+</main>
+<footer><div class="wrap foot"><div><strong>SAGAR REALITY VLOGS</strong><br><span data-en="Real Estate • Property • Trust" data-mr="रिअल इस्टेट • मालमत्ता • विश्वास">Real Estate • Property • Trust</span></div><div>© <span id="year"></span> Sagar Reality Vlogs. All rights reserved.</div></div></footer>
+<a class="btn wa-float" href="https://wa.me/919175546576" aria-label="Chat on WhatsApp" data-en="WhatsApp ↗" data-mr="WhatsApp ↗">WhatsApp ↗</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+function setLanguage(lang){
+  document.documentElement.lang = lang === 'mr' ? 'mr' : 'en';
+  document.querySelectorAll('[data-en][data-mr]').forEach(el=>{
+    const value = el.dataset[lang];
+    if (!value) return;
+    if (el.tagName === 'H1' && value.includes('|')) {
+      const parts = value.split('|');
+      el.innerHTML = `${parts[0]}<br><span>${parts[1]}</span>`;
+    } else if (el.tagName === 'OPTION') {
+      el.textContent = value;
+    } else {
+      el.textContent = value;
+    }
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn=>btn.classList.toggle('active',btn.dataset.lang===lang));
+  const placeholders = {
+    name: {en:'Enter your name', mr:'तुमचे नाव लिहा'},
+    phone: {en:'Your contact number', mr:'तुमचा मोबाईल नंबर'},
+    location: {en:'City / Area', mr:'शहर / परिसर'},
+    message: {en:'Tell us more about your requirement...', mr:'तुमची गरज थोडक्यात सांगा...'}
+  };
+  Object.entries(placeholders).forEach(([id, values])=>{
+    const field=document.getElementById(id);
+    if(field) field.placeholder=values[lang];
+  });
+  try { localStorage.setItem('sagarSiteLanguage',lang); } catch(e) {}
+}
+document.querySelectorAll('.lang-btn').forEach(btn=>btn.addEventListener('click',()=>setLanguage(btn.dataset.lang)));
+let savedLanguage = 'en';
+try { savedLanguage = localStorage.getItem('sagarSiteLanguage') || 'en'; } catch(e) {}
+setLanguage(savedLanguage);
+document.getElementById('leadForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const f=new FormData(this);
+ const msg=`*New Property Enquiry - Sagar Reality Vlogs*%0A%0A*Name:* ${encodeURIComponent(f.get('name'))}%0A*Mobile:* ${encodeURIComponent(f.get('phone'))}%0A*Requirement:* ${encodeURIComponent(f.get('interest'))}%0A*<span data-en="Property Type" data-mr="मालमत्तेचा प्रकार">Property Type</span>:* ${encodeURIComponent(f.get('type'))}%0A*Location:* ${encodeURIComponent(f.get('location')||'Not specified')}%0A*Budget:* ${encodeURIComponent(f.get('budget')||'Not specified')}%0A*Details:* ${encodeURIComponent(f.get('message')||'None')}`;
+ window.open('https://wa.me/919175546576?text='+msg,'_blank');
+});
+</script>
+</body></html>
